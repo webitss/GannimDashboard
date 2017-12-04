@@ -1,0 +1,19 @@
+
+
+.card-ganim span{
+    width: 30%;
+    background: red;
+    height: 100%;
+    font-size: 3em;
+    vertical-align: middle;
+
+}
+
+.card-ganim h3{
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 1.5em;
+    
+    }
