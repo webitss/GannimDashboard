@@ -9,6 +9,8 @@ import {AuthService} from "./auth.service";
             <h1>
                 גנים- דשבורד
             </h1>
+            <div class="pull-right">
+            <img src="assets/images/logo-ganim.png"/></div>
         </div>
         <nav class=" navbar navbar-default">
             <div class="container-fluid container">
@@ -43,7 +45,9 @@ import {AuthService} from "./auth.service";
             <PieChart class="col-md-4"></PieChart>
             <BarChart class="col-md-8"></BarChart>
             </div>
+
             <Genes class="col-md-12"></Genes>
+            
             <LineChart class="col-md-12"></LineChart>
             
         </main>
