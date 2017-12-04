@@ -27,7 +27,7 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
       ChartsModule,
       HttpModule,
       RouterModule.forRoot([
-          /* {path: '', pathMatch: 'full', redirectTo: 'help'},*/
+       /*  {path: '', pathMatch: 'full', redirectTo: 'help'},*/
           {path: 'help', component: HelpComponent},
       ])
   ],
