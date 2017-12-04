@@ -46,9 +46,10 @@ import {AuthService} from "./auth.service";
             <Genes class="col-md-12"></Genes>
             <LineChart class="col-md-12"></LineChart>
             
-            
         </main>
 
+        <router-outlet></router-outlet>
+       
     `,
     styles: []
 })

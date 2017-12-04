@@ -4,13 +4,17 @@ import {Component} from "@angular/core";
     selector: 'Help',
     styles: [],
     template: `
-      Hello help!!
-      <div class="loading">
-  <img src="assets/loading.svg" alt="loading">
-</div>
-<div>
-  
-</div>
+        
+        <main class="container">
+            <!-- <router-outlet></router-outlet>-->
+            <PieChart class="col-md-4"></PieChart>
+            <div class="col-md-8">
+                <BarChart class="row"></BarChart><br>
+                <LineChart class="row"></LineChart>
+            </div>
+            <Genes class="col-md-12"></Genes>
+        </main>
+
 `
 })
 export class HelpComponent {
