@@ -5,13 +5,13 @@ import {AuthService} from "./auth.service";
     selector: 'app-root',
     template: `
         <!--The content below is only a placeholder and can be replaced.-->
-        <div style="text-align:center">
+        <div class="container" style="text-align:center">
             <h1>
                 גנים- דשבורד
             </h1>
         </div>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
+        <nav class=" navbar navbar-default">
+            <div class="container-fluid container">
                 <div class="navbar-header">
                     <!-- <button
                        class="btn btn-primary btn-margin"
@@ -39,10 +39,12 @@ import {AuthService} from "./auth.service";
 
         <main class="container">
             <!-- <router-outlet></router-outlet>-->
-            <PieChart></PieChart>
-            <BarChart></BarChart><br>
-            <LineChart></LineChart>
-            <Genes></Genes>
+            <PieChart class="col-md-4"></PieChart>
+            <div class="col-md-8">
+            <BarChart class="row"></BarChart><br>
+            <LineChart class="row"></LineChart>
+            </div>
+            <Genes class="col-md-12"></Genes>
         </main>
 
     `,
