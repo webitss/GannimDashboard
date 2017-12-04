@@ -26,10 +26,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     BrowserModule,
       ChartsModule,
       HttpModule,
-       RouterModule.forRoot([
-         {path: '', pathMatch: 'full', redirectTo: 'help'}
-
-
+      RouterModule.forRoot([
+          /* {path: '', pathMatch: 'full', redirectTo: 'help'},*/
+          {path: 'help', component: HelpComponent},
       ])
   ],
   providers: [AuthService,AuthService,
