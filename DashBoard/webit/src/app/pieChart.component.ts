@@ -4,14 +4,12 @@ import {Component} from "@angular/core";
     selector: 'PieChart',
     styles: [
             `
-            .border {
-                border-style: solid;
-            }
+           
         `
     ],
     template: `
         <h2>גנים</h2>
-        <div style="display: block" class="border">
+        <div class="box-baseChart">
             <canvas baseChart
                     [data]="pieChartData"
                     [labels]="pieChartLabels"

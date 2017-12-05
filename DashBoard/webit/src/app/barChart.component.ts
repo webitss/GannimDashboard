@@ -4,16 +4,12 @@ import {Component} from "@angular/core";
   selector: 'BarChart',
   styles : [
       `
-          .border {
-              border-style: solid;
-          }
-      
       `
   ],
   template: `
       <div>
           <h2>מצבת כח אדם</h2>
-          <div style="display: block" class="border">
+          <div  class="box-baseChart">
               <canvas baseChart
                       [datasets]="barChartData"
                       [labels]="barChartLabels"
