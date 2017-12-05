@@ -7,10 +7,10 @@ import {Component} from "@angular/core";
         
         <main class="container">
             <!-- <router-outlet></router-outlet>-->
-<div>
+             <div>
            
-            <PieChart class="col-md-4"></PieChart>
-            <BarChart class="col-md-8"></BarChart>
+            <PieChart ></PieChart>
+            <BarChart ></BarChart>
             </div>
            
 

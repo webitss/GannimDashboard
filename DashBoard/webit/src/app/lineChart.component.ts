@@ -9,13 +9,20 @@ import {Component} from "@angular/core";
     ],
     template: `
         
+<div>
+
+    <span>שעות עבודה- חודש</span>
+
+    <select class="form-control"(change)="change()">
+    <option>דצמבר</option>
+    <option>יוני</option>
+    <option>יולי</option>
+    </select>
+
+
+</div>
         <div class="box-baseChart-2">
-            <select (change)="change()">
-                <option>דצמבר</option>
-                <option>יוני</option>
-                <option>יולי</option>
-            </select>
-            <span>שעות עבודה- חודש</span>
+            
             <canvas baseChart
                     [datasets]="lineChartData"
                     [labels]="lineChartLabels"
@@ -72,7 +79,7 @@ export class LineChartComponent {
             pointHoverBorderColor: 'rgba(148,159,177,0.8)'
         },
         { // dark grey
-            backgroundColor: 'rgba(77,83,96,0.2)',
+            backgroundColor: '#76054a70',
             borderColor: 'rgba(77,83,96,1)',
             pointBackgroundColor: 'rgba(77,83,96,1)',
             pointBorderColor: '#fff',

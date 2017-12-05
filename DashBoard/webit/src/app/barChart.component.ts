@@ -8,9 +8,10 @@ import {Component} from "@angular/core";
   ],
   template: `
       <div>
-          <h2>מצבת כח אדם</h2>
-          <div  class="box-baseChart">
-              <canvas baseChart
+         
+          <div  class="box-baseChart" style="float:left; width:66%;">
+           <h2>מצבת כח אדם</h2>
+              <canvas baseChart width="2" height="1"
                       [datasets]="barChartData"
                       [labels]="barChartLabels"
                       [options]="barChartOptions"
@@ -47,7 +48,7 @@ export class BarChartComponent {
     }
     public lineChartColors:Array<any> = [
         { // grey
-            backgroundColor: 'rgba(148,159,177,0.2)',
+            backgroundColor: '#700447',
             borderColor: 'rgba(148,159,177,1)',
             pointBackgroundColor: 'rgba(148,159,177,1)',
             pointBorderColor: '#fff',

@@ -8,9 +8,10 @@ import {Component} from "@angular/core";
         `
     ],
     template: `
+        
+        <div class="box-baseChart" style="float:right; width: 33%;" >
         <h2>גנים</h2>
-        <div class="box-baseChart">
-            <canvas baseChart
+            <canvas baseChart width="1" height="1"
                     [data]="pieChartData"
                     [labels]="pieChartLabels"
                     [colors]="lineChartColors"
@@ -38,7 +39,7 @@ export class PieChartComponent {
     }
     public lineChartColors:Array<any> = [
         { // grey
-            backgroundColor: 'rgba(148,159,177,0.2)',
+            backgroundColor: 'red',
             borderColor: 'rgba(148,159,177,1)',
             pointBackgroundColor: 'rgba(148,159,177,1)',
             pointBorderColor: '#fff',
@@ -46,7 +47,7 @@ export class PieChartComponent {
             pointHoverBorderColor: 'rgba(148,159,177,0.8)'
         },
         { // dark grey
-            backgroundColor: 'rgba(77,83,96,0.2)',
+            backgroundColor: 'green',
             borderColor: 'rgba(77,83,96,1)',
             pointBackgroundColor: 'rgba(77,83,96,1)',
             pointBorderColor: '#fff',
@@ -54,7 +55,7 @@ export class PieChartComponent {
             pointHoverBorderColor: 'rgba(77,83,96,1)'
         },
         { // grey
-            backgroundColor: 'rgba(148,159,177,0.2)',
+            backgroundColor: 'yellow',
             borderColor: 'rgba(148,159,177,1)',
             pointBackgroundColor: 'rgba(148,159,177,1)',
             pointBorderColor: '#fff',
