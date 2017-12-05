@@ -5,17 +5,22 @@ import {AuthService} from "./auth.service";
     selector: 'app-root',
     template: `
         <!--The content below is only a placeholder and can be replaced.-->
-        <div class="container" style="text-align:center">
-            <h1>
+       
+        <div class="header-ganim">
+        <div class="container">
+            <h1 class="">
                 גנים- דשבורד
             </h1>
             <div class="pull-right">
             <img src="assets/images/logo-ganim.png"/></div>
+            </div>
         </div>
+
         <nav class=" navbar navbar-default">
             <div class="container-fluid container">
                 <div class="navbar-header">
-                    <!-- <button
+                   
+                <!-- <button
                        class="btn btn-primary btn-margin"
                        routerLink="/">
                          Home
@@ -42,7 +47,7 @@ import {AuthService} from "./auth.service";
 
        <router-outlet></router-outlet>
 
-       <!-- <main class="container">
+      <main class="container">
             &lt;!&ndash; <router-outlet></router-outlet>&ndash;&gt;
             <div>
             <PieChart class="col-md-4"></PieChart>
@@ -55,7 +60,7 @@ import {AuthService} from "./auth.service";
             
         </main>
 
-        <router-outlet></router-outlet>-->
+        <router-outlet></router-outlet>
        
 
     `,

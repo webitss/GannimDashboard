@@ -4,14 +4,12 @@ import {Component} from "@angular/core";
     selector: 'LineChart',
     styles: [
             `
-            .border {
-                border-style: solid;
-            }
+            
         `
     ],
     template: `
         
-        <div style="display: block;" class="border">
+        <div class="box-baseChart-2">
             <select (change)="change()">
                 <option>דצמבר</option>
                 <option>יוני</option>
