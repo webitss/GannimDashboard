@@ -7,36 +7,42 @@ import {Component} from "@angular/core";
 
         <main class="container">
             <!-- <router-outlet></router-outlet>-->
+            
             <div>
                 <PieChart class="col-md-4"></PieChart>
                 <BarChart class="col-md-8"></BarChart>
+                =======
+                    <div>
+                        <PieChart></PieChart>
+                        <BarChart></BarChart>
+                    </div>
+
+
+                    <Genes class="col-md-12"></Genes>
+
+
+                    <div class="col-md-12">
+                        <LineChart></LineChart>
+                    </div>
+
+                    <!--<bar-vertical-normalized
+                            [view]="[600,300]"
+                            [results]="data"
+                            [scheme]="color"
+                            [xAxis]="true"
+                            [yAxis]="true"
+                            [legend]="true">
+                    </bar-vertical-normalized>-->
             </div>
-
-
-            <Genes class="col-md-12"></Genes>
-
-
-            <div class="col-md-12">
-                <LineChart></LineChart>
-            </div>
-
-            <bar-vertical-normalized
-                    [view]="[600,300]"
-                    [results]="data"
-                    [scheme]="color"
-                    [xAxis]="true"
-                    [yAxis]="true"
-                    [legend]="true">
-            </bar-vertical-normalized>
         </main>
 
-       
+
 
     `
 })
 export class HelpComponent {
-    color= { domain:['#f44336','#f2224b']};
-    data=[
+    color = {domain: ['#f44336', '#f2224b']};
+    data = [
         {
             "name": "Germany",
             "series": [
