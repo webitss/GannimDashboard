@@ -13,7 +13,7 @@ import {Component} from "@angular/core";
 
     <span>שעות עבודה- חודש</span>
 
-    <select class="form-control"(change)="change()">
+    <select class="form-control width-select"(change)="change()">
     <option>דצמבר</option>
     <option>יוני</option>
     <option>יולי</option>
@@ -23,7 +23,7 @@ import {Component} from "@angular/core";
 </div>
         <div class="box-baseChart-2">
             
-            <canvas baseChart
+            <canvas baseChart width="2" height="1"
                     [datasets]="lineChartData"
                     [labels]="lineChartLabels"
                     [options]="lineChartOptions"
