@@ -11,7 +11,7 @@ import { ChartsModule } from 'ng2-charts';
 import {BarChartComponent} from "./barChart.component";
 import {LineChartComponent} from "./lineChart.component";
 import {GenesComponent} from "./genes.component";
-
+import {NG2D3Module}  from "ng2d3";
 export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     return new AuthHttp(new AuthConfig({
         tokenGetter: (() => localStorage.getItem('access_token'))
@@ -25,6 +25,7 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
   imports: [
     BrowserModule,
       ChartsModule,
+      NG2D3Module,
       HttpModule,
       RouterModule.forRoot([
        /*  {path: '', pathMatch: 'full', redirectTo: 'help'},*/
