@@ -1,0 +1,67 @@
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.header-ganim{
+border-bottom: 1px solid #73044a;
+width: 100%;
+/* text-align: center; */
+}
+
+.header-ganim h1{
+color: #700447;
+font-weight: bold;
+display: inline-block;
+
+}
+
+.header-ganim img{
+    height: 80px;
+    padding: 5px;
+}
+
+
+.card-ganim span{
+    margin-left: 5px;
+    height: 100%;
+    font-size: 3em;
+    vertical-align: middle;
+    /* float: right; */
+    text-align: -webkit-auto;
+    color: #76054a;
+    font-weight: bold;
+}
+
+.card-ganim h3{
+    width: 76%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 1.3em;
+    /* float: left; */
+    margin: 0;
+    
+    }
+
+    .card-ganim{
+        background: #f7f7f7;
+        padding: 11% 3%;
+        margin: 5vh 0;
+        border-top-left-radius: 40px;
+        box-shadow: 1px 1px 0 #750549;
+    }
+
+    .box-baseChart{
+        display: block;
+       
+    }
+
+    .box-baseChart-2{
+        display: block;
+        margin-bottom: 2vh;
+    }
+
+.width-select{
+    width: 200px;
+    display: inline-block;}
